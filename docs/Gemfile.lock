@@ -38,29 +38,12 @@ GEM
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
     execjs (2.9.1)
-    faraday (1.10.5)
-      faraday-em_http (~> 1.0)
-      faraday-em_synchrony (~> 1.0)
-      faraday-excon (~> 1.1)
-      faraday-httpclient (~> 1.0)
-      faraday-multipart (~> 1.0)
-      faraday-net_http (~> 1.0)
-      faraday-net_http_persistent (~> 1.0)
-      faraday-patron (~> 1.0)
-      faraday-rack (~> 1.0)
-      faraday-retry (~> 1.0)
-      ruby2_keywords (>= 0.0.4)
-    faraday-em_http (1.0.0)
-    faraday-em_synchrony (1.0.1)
-    faraday-excon (1.1.0)
-    faraday-httpclient (1.0.1)
-    faraday-multipart (1.2.0)
-      multipart-post (~> 2.0)
-    faraday-net_http (1.0.2)
-    faraday-net_http_persistent (1.2.0)
-    faraday-patron (1.0.0)
-    faraday-rack (1.0.0)
-    faraday-retry (1.0.4)
+    faraday (2.14.3)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.4)
+      net-http (~> 0.5)
     ffi (1.17.0-arm64-darwin)
     ffi (1.17.0-x86_64-linux-gnu)
     forwardable-extended (2.6.0)
@@ -233,6 +216,7 @@ GEM
       gemoji (>= 3, < 5)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0, < 5.0)
+    json (2.20.0)
     kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -248,7 +232,8 @@ GEM
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
     minitest (5.27.0)
-    multipart-post (2.4.1)
+    net-http (0.9.1)
+      uri (>= 0.11.1)
     nokogiri (1.19.3-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.19.3-x86_64-linux-gnu)
@@ -266,7 +251,6 @@ GEM
       ffi (~> 1.0)
     rexml (3.4.2)
     rouge (3.30.0)
-    ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     safe_yaml (1.0.5)
     sass (3.7.4)
@@ -286,6 +270,7 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (1.8.0)
+    uri (1.1.1)
     webrick (1.8.2)
 
 PLATFORMS
@@ -295,7 +280,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  faraday (= 1.10.5)
+  faraday (= 2.14.3)
   github-pages
   jekyll-feed
   jekyll-include-cache

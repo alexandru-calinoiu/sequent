@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'faraday', '1.10.5'
+gem 'faraday', '2.14.3'
 gem 'webrick'
 gem 'ostruct'
 gem 'dotenv', groups: [:development, :test]
